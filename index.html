@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>On the Progenitors and Explosion Properties of Supernova Remnants Hosting Central Compact Objects</title>
+    <link rel="stylesheet" href="poster.css">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1">
+    <!-- Based on a poster template from https://github.com/cpitclaudel/academic-poster-template -->
+
+          <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+          <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+    
+    <style type="text/css">
+  html { font-size: 1.15rem }
+</style>
+  </head>
+
+  <body vocab="http://schema.org/" typeof="ScholarlyArticle">
+    <header role="banner">
+      <aside>
+          <a href="https://umanitoba.ca/"><img src="UM_Logo_VERT_RGB.png" alt="U of M logo" style="margin: .5rem"></a>
+      </aside>
+      <div>
+        <h1 property="headline">On the Progenitors and Explosion Properties of Supernova Remnants Hosting Central Compact Objects</h1>
+                <address>
+              <a property="author"><strong>C Braun</strong><sup>1</sup>, S Safi-Harb<sup>1</sup>, C Fryer<sup>2</sup>, P Zhou<sup>3</sup></a>
+<br />  <sup>1</sup><a property="sourceOrganization">University of Manitoba,</a>
+        <sup>2</sup><a property="sourceOrganization">Los Alamos National Laboratory,</a>
+        <sup>3</sup><a property="sourceOrganization">Nanjing University </a>
+        </address>
+        <span class="publication-info">
+                      <span property="publisher">Unpublished</span>,
+            <time pubdate property="datePublished" datetime="2020-09-08">September 8, 2020</time>
+                  </span>
+      </div>
+      <aside>
+          <a href=https://www.nserc-crsng.gc.ca/index_eng.asp><img src="img-logo2-en.png" alt="NSERC Logo" style="margin: .5rem"></a>
+      </aside>
+    </header>
+    
+<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Motivation
+! 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->      
+
+    <main property="articleBody">
+        <article property="Motivation">
+        <header style="border-radius: 10px"><h3>Motivation</h3></header>
+
+    <p align="justify" style="font-size: 12px">
+        We present a systematic progenitor study of all Galactic, ejecta-dominated supernova remnants (SNRs) containing the intriguing class of central compact objects (CCOs). 
+        Of the 15 Galactic SNRs containing CCOs, 7 show evidence of shock-heated ejecta: G15.9+0.2, Kes 79, Cas A, Puppis A, G349.7+0.2, G350.1-0.1, and RCW 103 (see SNRCat, bottom left). 
+        We performed spatially resolved spectral analysis in order to detect ejecta for elements that peak in the X-ray band: O, Ne, Mg, Si, S, Ar, Ca, and Fe. Spectra are fit with shockwave 
+        plasma models in order to derive the explosion properties and progenitor mass. An apparent disconnect between explosive nucleosynthesis models and observations has been a consistent problem 
+        in many X-ray spectroscopic studies of SNRs and we investigate that discrepancy here.
+    </p>
+  </article>
+
+<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Data Analysis
+! 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->  
+  
+  <article>
+    <header style="border-radius: 10px"><h3>Data Analysis</h3></header>
+    <p align="justify" style="font-size: 12px"> 
+    This study primarily uses archived Chandra data and some XMM-Newton data to perform spatially resolved spectroscopy. The regions were chosen using the algorithm contbin, which is an adaptive binning 
+    algorithm that selects regions based on similar surface brightness (Sanders 2006). 
+
+    <br><br>Each SNR region was fit using the software XSPEC with either a one- or two-component thermal plasma model, in order to separate the forward shocked component from the shock-heated ejecta component of the 
+    emission. Each shockwave model has parameters for temperature (kT), elemental abundances, ionization timescale (net), and a normalization constant which is a function of the emission measure (EM).
+
+    <br><br>The enhanced ejecta component allows the abundances to vary as appropriate for each distinct SNR, and can be used to estimate the progenitor mass by comparing the abundance yields from the spectral analysis
+    to the nucleosynthesis yields from the explosive nucleosynthesis models (see Figure 1).
+    </p>
+    
+    <figure>
+    <center><img class="imgtrans" src="flowchart.png" style="width:70%; margin: .5rem"></center>
+        
+    <figcaption align="justify" style="margin: .5rem; font-size: 12px; text-align: justify">Figure 1: Theorists create explosion models based on supernova (SN) data that predict nucleosynthesis yields 
+    as a function of the progenitor mass. As observers, we look at the spectra of ejecta dominated SNRs to measure the abundance yields. By comparing the observed yields to the theoretical yields, we
+    can estimate the progenitor mass.
+    </figcaption>
+    
+    
+ <!--  
+Contbin has a few advantages: 
+ <ul>
+      <li>it covers the entire SNR leaving no gaps between regions</li>
+      <li>surface brightness has been shown to correlate with regions of similar physical attributes (density, temperature, abundances, etc.)</li>
+      <li>it reduces bias from region selection by eye, allowing for a consistent selection criteria that complements our systematic study  </li>
+    </ul>
+--> 
+  </article>
+
+  <article style="border-radius: 10px; background: #00394d; height:100%">
+  
+<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! G15
+! 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+  
+  <div class="w3-content w3-display-container">
+  <div class="mySlides">
+    <header align="center" style="font-family: Arial; font-size: 20px; color: white; margin: .25rem"><h3>G15.9+0.2</h3></header>
+
+    <figure id="imageleftg15">
+        <img class="imgscale" src="G15_smoothImg.png" alt="g15_image"/>
+    </figure>
+    <figure id="imagerightg15">
+        <img class="imgscale" src="g15_contbin_crop.png" alt="g15_regions"/>
+        <figcaption style="font-size: 12px; color: white"> Figure 2: <br> (Left) Broadband X-ray image of G15.9+0.2 with a log scale and smoothed. 
+        <br>(Top) Region selection for G15.9+0.2. </figcaption>
+    </figure>
+   
+    <figure>
+        <center><img class="imgplot" src="g15_plots.png" style="width:60%; margin: .5rem"></center>
+        
+        <figcaption align="justify" style="color: white; margin: .5rem; font-size: 12px; text-align: justify">
+        Figure 3: Comparison of abundance yields from the spectral fits of each region averaged (black cross) with associated error bars. 
+        Abundances are given with respects to Si with respects to solar, such that [X/Si]/[X/Si]<sub>☉</sub> for some element X. Each graph is a different nucleosynthesis model and the coloured dot indicates 
+        a different progenitor mass. Refer to the <em>Results Section</em> for descriptions of the models.  
+ </figcaption>
+    </figure>
+    
+    <p align="justify" style="color: white; margin: .5rem; font-size: 12px"> 
+        G15.9+0.2 has only good agreement for the Mg abundances and no model fits the data well. The best  fit comes from the S16 model, with the 21.6 M<sub>☉</sub> model and has the closest value for S. 
+        WW95 best estimate stems from the 18 M<sub>☉</sub> model. Additionally, we consider ejecta mass estimates which were in agreement with the S16 18.6 M<sub>☉</sub> model. We concluded a progenitor 
+        mass estimate of 18-22 M<sub>☉</sub>.
+    </p>
+  </div>
+ 
+<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! KES 79
+! 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+ 
+  <div class="mySlides">
+    <header align="center" style="font-family: Arial; font-size: 20px; color: white; margin: .25rem"><h3>Kes 79</h3></header>
+
+    <figure id="imageleftkes79">
+        <img class="imgscale" src="kes79_smoothImg.png" alt="kes79_image"/>
+    </figure>
+    <figure id="imagerightkes79">
+        <img class="imgscale" src="kes79_contbin_crop.png" alt="kes79_regions"/>
+        <figcaption style="font-size: 12px; color: white"> Figure 2: <br> (Left) Broadband X-ray image of Kes 79 with a log scale and smoothed. 
+        <br>(Top) Region selection for Kes 79. </figcaption>
+    </figure>
+   
+    <figure>
+        <center><img class="imgplot" src="kes79_plots.png" style="width:60%; margin: .5rem"></center>
+        
+        <figcaption align="justify" style="color: white; margin: .5rem; font-size: 12px; text-align: justify">
+        Figure 3: Comparison of abundance yields from the spectral fits of each region averaged (black cross) with associated error bars. 
+        Abundances are given with respects to Si with respects to solar, such that [X/Si]/[X/Si]<sub>☉</sub> for some element X. Each graph is a different nucleosynthesis model and the coloured dot indicates 
+        a different progenitor mass. Refer to the <em>Results Section</em> for descriptions of the models.         
+ </figcaption>
+    </figure>
+    
+    <p align="justify" style="color: white; margin: .5rem; font-size: 12px"> 
+        Kes 79 has a best fit for the S16 model for Ne, Mg, and S for a progenitor mass of 9 M<sub>☉</sub>. None of the models fit well for all the elements, but the S16 10 M<sub>☉</sub> model also good fits. 
+        We also looked at the ejecta mass and found agreement for the S16 11.75-12.25 M<sub>☉</sub> models for Ne, Mg, Si, S, and Fe as well as the N06 and M03 models show trends towards smaller masses. 
+        WW95 showed good agreement for Ne, Mg, Si, and S for the 11-13 M<sub>☉</sub> models. We concluded a progenitor mass estimate of 9-13 M<sub>☉</sub>.
+
+    </p>
+  </div>
+  
+<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! CASA
+! 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->  
+  
+  <div class="mySlides">
+    <header align="center" style="font-family: Arial; font-size: 20px; color: white; margin: .25rem"><h3>Cas A</h3></header>
+
+    <figure id="imageleftcasa">
+        <img class="imgscale" src="casa_smoothImg.png" alt="casa_image"/>
+    </figure>
+    <figure id="imagerightcasa">
+        <img class="imgscale" src="casa_contbin.png" alt="casa_regions"/>
+        <figcaption style="font-size: 12px; color: white"> Figure 2: <br> (Left) Broadband X-ray image of Kes 79 with a log scale and smoothed. 
+        <br>(Top) Region selection for Kes 79. </figcaption>
+    </figure>
+   
+    <figure>
+        <center><img class="imgplot" src="casa_plots.png" style="width:60%; margin: .5rem"></center>
+        
+        <figcaption align="justify" style="color: white; margin: .5rem; font-size: 12px; text-align: justify">
+        Figure 3: Comparison of abundance yields from the spectral fits of each region averaged (black cross) with associated error bars. 
+        Abundances are given with respects to Si with respects to solar, such that [X/Si]/[X/Si]<sub>☉</sub> for some element X. Each graph is a different nucleosynthesis model and the coloured dot indicates 
+        a different progenitor mass. Refer to the <em>Results Section</em> for descriptions of the models.         
+ </figcaption>
+    </figure>
+    
+    <p align="justify" style="color: white; margin: .5rem; font-size: 12px"> 
+        Cas A is particularly challenging to determine the progenitor mass with this method as the regions are small enough that they can be composed purely of a single element and low/subsolar
+        amounts of the other elements such that averaging over the abundance would  trend to lower values. Combined with the exceptional quality of the data, we find that no models fit the data points. 
+        The closest match is determined by the next closest data points from the S16 and WW95 model, concluding a progenitor mass of 10-15 M<sub>☉</sub>. 
+
+
+    </p>
+  </div>  
+
+<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Pup A
+! 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!--> 
+
+  <div class="mySlides">
+    <header align="center" style="font-family: Arial; font-size: 20px; color: white; margin: .25rem"><h3>Puppis A</h3></header>
+
+    <figure id="imageleftpupa">
+        <img class="imgscale" src="pupa_rosat_smoothed.png" alt="pupa_image"/>
+    </figure>
+    <figure id="imagerightpupa">
+        <img class="imgscale" src="pupa_reg_crop.png" alt="pupa_regions"/>
+        <figcaption style="font-size: 12px; color: white"> Figure 2: <br> (Left) Broadband X-ray image of Puppis A with a log scale and smoothed. 
+        <br>(Top) Select enhanced ejecta regions for Puppis A. </figcaption>
+    </figure>
+   
+    <figure>
+        <center><img class="imgplot" src="pupa_plots.png" style="width:60%; margin: .5rem"></center>
+        
+        <figcaption align="justify" style="color: white; margin: .5rem; font-size: 12px; text-align: justify">
+        Figure 3: Comparison of abundance yields from the spectral fits of each region averaged (black cross) with associated error bars. 
+        Abundances are given with respects to Si with respects to solar, such that [X/Si]/[X/Si]<sub>☉</sub> for some element X. Each graph is a different nucleosynthesis model and the coloured dot indicates 
+        a different progenitor mass. Refer to the <em>Results Section</em> for descriptions of the models.           
+ </figcaption>
+    </figure>
+    
+    <p align="justify" style="color: white; margin: .5rem; font-size: 12px"> 
+        Puppis A had only a few regions that had enhanced ejecta. We find the best fit comes from the S16 model for O, Ne, and Mg for the 20-22 M<sub>☉</sub> models, but not Fe. However, 
+        the WW95 model and the N06 model suggests a much a larger mass (35-40 M<sub>☉</sub>). However, past results agree with the S16 model, and so we concluded a progenitor mass estimate of 20-22 M<sub>☉</sub>.
+    </p>
+  </div> 
+
+<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! G349
+! 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->   
+
+  <div class="mySlides">
+    <header align="center" style="font-family: Arial; font-size: 20px; color: white; margin: .25rem"><h3>G349.7+0.2</h3></header>
+
+    <figure id="imageleftg349">
+        <img class="imgscale" src="g349_smoothImg.png" alt="G349_image"/>
+    </figure>
+    <figure id="imagerightg349">
+        <img class="imgscale" src="g349_contbin_crop.png" alt="g349_regions"/>
+        <figcaption style="font-size: 12px; color: white"> Figure 2: <br> (Left) Broadband X-ray image of G349.7+0.2 with a log scale and smoothed. 
+        <br>(Top) Region selection for G349.7+0.2. </figcaption>
+    </figure>
+   
+    <figure>
+        <center><img class="imgplot" src="g349_plots.png" style="width:60%; margin: .5rem"></center>
+        
+        <figcaption align="justify" style="color: white; margin: .5rem; font-size: 12px; text-align: justify">
+        Figure 3: Comparison of abundance yields from the spectral fits of each region averaged (black cross) with associated error bars. 
+        Abundances are given with respects to Si with respects to solar, such that [X/Si]/[X/Si]<sub>☉</sub> for some element X. Each graph is a different nucleosynthesis model and the coloured dot indicates 
+        a different progenitor mass. Refer to the <em>Results Section</em> for descriptions of the models.          
+ </figcaption>
+    </figure>
+    
+    <p align="justify" style="color: white; margin: .5rem; font-size: 12px"> 
+        G349.7+0.2’s best fit by the 18-21 M<sub>☉</sub> models for Mg, S, and Ar. No models fit all the data. The M03 model also fits Mg, S, and Ca well for the 25 M<sub>☉</sub> model. We concluded a 
+        progenitor mass estimate of 18-25 M<sub>☉</sub>.
+
+    </p>
+  </div> 
+  
+<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! G350
+! 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->   
+
+  <div class="mySlides">
+    <header align="center" style="font-family: Arial; font-size: 20px; color: white; margin: .25rem"><h3>G350.1-0.1</h3></header>
+
+    <figure id="imageleftg350">
+        <img class="imgscale" src="g350_smoothImg.png" alt="G350_image"/>
+    </figure>
+    <figure id="imagerightg350">
+        <img class="imgscale" src="g350_contbin_crop.png" alt="g350_regions"/>
+        <figcaption style="font-size: 12px; color: white"> Figure 2: <br> (Left) Broadband X-ray image of G349.7+0.2 with a log scale and smoothed. 
+        <br>(Top) Region selection for G349.7+0.2. </figcaption>
+    </figure>
+   
+    <figure>
+        <center><img class="imgplot" src="g349_plots.png" style="width:60%; margin: .5rem"></center>
+        
+        <figcaption align="justify" style="color: white; margin: .5rem; font-size: 12px; text-align: justify">
+        Figure 3: Comparison of abundance yields from the spectral fits of each region averaged (black cross) with associated error bars. 
+        Abundances are given with respects to Si with respects to solar, such that [X/Si]/[X/Si]<sub>☉</sub> for some element X. Each graph is a different nucleosynthesis model and the coloured dot indicates 
+        a different progenitor mass. Refer to the <em>Results Section</em> for descriptions of the models.          
+ </figcaption>
+    </figure>
+    
+    <p align="justify" style="color: white; margin: .5rem; font-size: 12px"> 
+        G350.1-0.1’s best fit comes from the S16 model where Mg, Ar, and Fe are in agreement for the 9 and 12 M<sub>☉</sub> models. None of the other models had multiple abundances well fit by the data. 
+        We concluded a progenitor mass estimate of 9-12 M<sub>☉</sub>.
+
+
+    </p>
+  </div> 
+  
+<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! RCW103
+! 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->   
+
+  <div class="mySlides">
+    <header align="center" style="font-family: Arial; font-size: 20px; color: white; margin: .25rem"><h3>RCW 103</h3></header>
+
+    <figure id="imageleftrcw103">
+        <img class="imgscale" src="rcw103_rgb.png" alt="rcw103_image"/>
+    </figure>
+    <figure id="imagerightrcw103">
+        <img class="imgscalercw" src="rcw103_regions.png" alt="rcw103_regions"/>
+        <figcaption style="font-size: 12px; color: white"> 
+        Figure 2: 
+        <br> (Left) RGB image of RCW 103 with red, green, and blue corresponding to 0.5-1.2 keV, 1.2-2.0 keV, and 2.0-7.0 keV, respectively. 
+ 
+        <br> (Top) Region selection for RCW 103. 
+        </figcaption>
+    </figure>
+   
+    <figure>
+        <center><img class="imgplot" src="rcw103_plots.png" style="width:60%; margin: .5rem"></center>
+        
+        <figcaption align="justify" style="color: white; margin: .5rem; font-size: 12px; text-align: justify">
+        Figure 3: Comparison of abundance yields from the spectral fits of each region averaged (black square) with associated error bars. 
+        Abundances are given with respects to Si with respects to solar, such that [X/Si]/[X/Si]<sub>☉</sub> for some element X. Each graph is a different nucleosynthesis model and the coloured dot 
+        indicates a different progenitor mass. The F18 model explores different explosion energies for different the same progenitor mass. Refer to the <em>Results Section</em> for descriptions of the models.  
+      
+ </figcaption>
+    </figure>
+    
+    <p align="justify" style="color: white; margin: .5rem; font-size: 12px"> 
+        RCW 103’s best fit comes from the lowest masses associated with the S16 model for 12-13 M<sub>☉</sub>, although only for Mg and Fe. Similarly, the best fits from the F18 model comes from the lowest mass 
+        15 M<sub>☉</sub> model, with trends indicating a lower mass might provide an even more suitable fit.  We concluded a progenitor mass estimate of 12-13 M<sub>☉</sub>. 
+        RCW 103 results were published in a separate paper: Braun et al. 2019.
+
+
+
+    </p>
+  </div> 
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+  
+  
+  
+<!--    <header><h3>Figures</h3></header>
+
+    <p style="color: white">
+    
+    <br>Use the following code to insert a figure:
+    </p>
+
+    <pre>&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure">figure</a>&gt;
+  <i>Figure contents:
+    images (&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img">img</a>&gt;, &lt;<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/object">object</a>&gt;),
+    tables (&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table">table</a>&gt;),
+    quotes, …</i>
+  &lt;<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption">figcaption</a>&gt;<i>Figure caption</i>&lt;/<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption">figcaption</a>&gt;
+&lt;/<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure">figure</a>&gt;</pre>
+
+    <hr/>
+
+    <figure>
+      <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo.svg" width="197" height="64" alt="An orange shield with a white 5 emblazoned on it and the letters HTML above it.">
+
+      <figcaption>The HTML5 logo (<i>Source: <a href="https://www.w3.org/html/logo/">W3C</a></i>)</figcaption>
+    </figure>
+-->
+</article>
+  
+<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Results
+! 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->    
+
+  <article style="background-color: white">
+    <header style="border-radius: 10px"><h3>Results</h3></header>
+
+    <div align="justify" style="font-size: 12px">
+    We compare to the latest nucleosynthesis models:
+    
+    <ul style="font-size: 12px">
+      <li>WW95 - One of the first nucleosynthesis models (Woosely & Weaver 1995) </li>
+      <li>M03 - Bipolar explosion models (Maeda & Nomoto 2003) </li>
+      <li>N06 - Hypernova models (Nomoto et al. 2006)</li>
+      <li>S16 - A suite of spherical explosions using a range of progenitor masses (Sukhbold et al. 2016)</li>
+      <li>F18 - A set of explosion models using 3 progenitors but with a broad range of explosion energies (Fryer et al. 2018); coming soon!</li>
+    </ul>
+    
+    <br>We present our best estimate the progenitor mass for each SNR (Table 1), however, consistent problems occur when determining the progenitor mass:
+    
+    <ul style="font-size: 12px">
+      <li> Mass estimates depend on which nucleosynthesis model is used </li>
+      <li> Not all elemental abundances are in agreement with the nucleosynthesis yields within the same model </li>
+      <li> The ejecta may not be distributed uniformly and so averaging the abundances will skew the results </li>
+      <li> There may be ejecta in the interior that is not shock-heated </li>
+      <li> The data is limited by the spectral resolution of the instruments </li>
+    </ul>
+    </div>
+  </article>
+  
+<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Conclusion
+! 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->    
+  
+  <article style="border-radius: 10px; background: #E96E4D">
+ <!-- <header style="border-radius: 10px; background: #E96E4D"><h3>Conclusion</h3></header>
+
+    <figure>
+    <img src="Table.png" alt="Table of Progenitor Mass Estimates." style="width: 25%; margin: .5rem; ">
+    
+    <figcaption style="font-size: 12px">Table 1: Progenitor mass estimates for each SNR. </figcaption> 
+    </figure>
+   <p align="justify" style="font-size: 12px">
+        Although we provide our best fit estimates for the progenitor mass, in actuality, none of the models are well suited to describe the abundance yields from X-ray observation. 
+        By performing a systematic study and comparing abundance yields to current explosive nucleosynthesis models, we can highlight the discrepancy between models and observations as well 
+        as provide feedback to the modelling community on the current limitations and assumptions made on nucleosynthesis yields.
+   </p>
+--> 
+
+<div class="infoBox">
+    <div class="inner">
+        <div class="entry">
+            <div class="title">
+            <div class="type">
+                <figure style="float:right; vertical-align: text-bottom; width: 80%">
+                <img class="imgtable" src="Table.png" alt="table"/>
+                <figcaption style="font-size: 12px"> 
+                Table 1: Progenitor mass estimates for each SNR.
+                </figcaption>
+                </figure>
+            </div style="font-size: 12px; text-align: justify">
+                <strong style="font-family: 'Arial'; font-size: 20px">Conclusion:</strong>
+                <br>Although we provide our best fit estimates for the progenitor mass, in actuality, none of the models are well suited to describe the abundance yields from X-ray observation. 
+                By performing a systematic study and comparing abundance yields to current explosive nucleosynthesis models, we can highlight the discrepancy between models and observations as well 
+                as provide feedback to the modelling community on the current limitations and assumptions made on nucleosynthesis yields.
+                High-resolution X-ray spectroscopy is also needed to better resolve emission lines.
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--    
+    <p style="font-size: 12px; float:left; vertical-align: text-bottom">
+        Although we provide our best fit estimates for the progenitor mass, in actuality, none of the models are well suited to describe the abundance yields from X-ray observation. 
+        By performing a systematic study and comparing abundance yields to current explosive nucleosynthesis models, we can highlight the discrepancy between models and observations as well 
+        as provide feedback to the modelling community on the current limitations and assumptions made on nucleosynthesis yields.
+    </p>
+
+    <figure style="float:right; vertical-align: text-bottom">
+        <img src="Table.png" alt="table" style="width:50%"/>
+        <figcaption style="font-size: 12px"> 
+        Table 1: Progenitor mass estimates for each SNR.
+        </figcaption>
+    </figure>
+    </div>
+ <figure>
+        <figcaption style="font-size: 12px">
+
+        </figcaption>
+    </figure>
+    <figure id="concright">
+        <img src="Table.png" alt="table"/>
+        <figcaption style="font-size: 12px"> 
+        Table 1: Progenitor mass estimates for each SNR.
+        </figcaption>
+    </figure>
+  -->
+  </article>
+  
+    <article style="border-radius: 10px; background: #D1FAFB">
+    
+    <p align="justify" style="font-size: 10px">
+    <br><strong> Citations: </strong>
+    <br>Braun, C., Safi-Harb, S., & Fryer, C. L. 2019, Monthly Notices of the Royal Astronomical Society, 489, 4444–4463 
+    <br>Fryer, C. L., Andrews, S., Even, W., Heger, A., & Safi-Harb, S. 2018, ApJ, 856, 	63
+    <br>Katsuda, S., Tsunemi, H., Uchida, H., & Kimura, M. 2008, ApJ, 689, 225
+    <br>Maeda, K., & Nomoto, K. 2003, ApJ, 598, 1163
+    <br>Sanders, J. S. 2016, contbin: Contour binning and accumulative smoothing, 	ascl:1609.023
+    <br>Sukhbold, T., Ertl, T., Woosley, S. E., Brown, J. M., & Janka, H.-T. 2016, ApJ, 821, 38
+    <br>Woosley, S. E., & Weaver, T. A. 1995, ApJS, 101, 181
+    </p>
+    <p align="justify" style="font-size: 10px">
+<!--    <strong> Acknowledgements: </strong>
+    <br>Thanks to my advisor Dr. Samar Safi-Harb and collaborators Chris Fryer and Ping Zhou for their contributions.
+    </p>
+-->
+  
+  </article>
+<!--  
+  <article>
+    <header><h3>Mathematics</h3></header>
+
+    <p>This poster template loads <a href="https://www.mathjax.org/">MathJax</a> by default, so you can include inline math in backslash-parentheses <code>\( … \)</code> and display math in backslash-brackets <code>\[ … \]</code>:</p>
+
+    <p class="center">\((\lambda x. e) v \downarrow e[x/v]\) (β-reduction)</p>
+
+    \[\frac
+      {\langle \mathtt{expr}, s\rangle \Downarrow v}
+      {\langle \mathtt{var := expr}, s\rangle \downarrow s\left[\mathtt{var} \leftarrow v\right]}
+     \small{\text{Assign}}\]
+
+    <p>Using MathJax allows users of assistive technology to browse the equations.</p>
+  </article>
+-->
+    </main>
+
+    <footer>
+        <address style="font-family:Palitino Lite">  <a href="http://snrcat.physics.umanitoba.ca/">SNRcat: High Energy SNR Catalogue</a>
+        </address>
+        <address style="font-family:Palitino Lite">  Contact Me: Chelsea Braun, umbrau59@myumanitoba.ca
+        </address>
+
+    </footer>
+  </body>
+</html>

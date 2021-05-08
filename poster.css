@@ -1,0 +1,523 @@
+/*
+Copyright © 2020 Clément Pit-Claudel
+https://github.com/cpitclaudel/academic-poster-template
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+*/
+a {
+  color: inherit;
+}
+address {
+  font-style: normal;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+pre,
+code,
+samp,
+.monospace {
+  font-family: "Ubuntu Mono", monospace;
+}
+b {
+  display: block;
+  text-align: center;
+  font-weight: 500;
+}
+@media all and (min-width: 60rem) {
+  body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+  }
+  body > header,
+  body > footer {
+    grid-auto-flow: column;
+    justify-content: space-between;
+  }
+  body > header {
+    grid-template-columns: auto 1fr auto;
+  }
+  main {
+    align-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: auto;
+    padding: 0.5rem;
+  }
+  main::after {
+    content: " ";
+    display: block;
+    flex-basis: 100%;
+    width: 0.5rem;
+  }
+  main > * {
+    flex-grow: 1;
+    margin: 0.5rem;
+    max-width: 40rem;
+    min-width: 22.5rem;
+    width: 25%;
+    width: calc(100% / 3 - 1rem);
+  }
+}
+@media not all and (min-width: 60rem) {
+  body > header,
+  body > footer {
+    grid-auto-flow: row;
+    justify-content: center;
+  }
+  body > header > div {
+    margin-bottom: 0.75rem;
+  }
+  main > * {
+    margin: 1rem;
+  }
+  article {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  font-family: 'Arial', 'Times New Roman', sans-serif;
+  margin: 0;
+}
+body > header,
+body > footer {
+  align-items: center;
+  background: rgb(0, 255, 191);
+  color: black;
+  display: grid;
+  grid-gap: 0.5rem;
+  padding: 0.5rem;
+  text-align: center;
+}
+body > header {
+  font-size: 80%;
+}
+body > header img {
+  max-height: 5rem;
+}
+body > header h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+body > header h2 {
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+body > header address {
+  margin-bottom: 0.25rem;
+  margin-top: 0.75rem;
+}
+body > header .publication-info {
+  display: none;
+}
+body > header time {
+  margin-top: 0.25rem;
+}
+main {
+  box-sizing: border-box;
+  min-height: 0;
+}
+main > * {
+  box-sizing: border-box;
+}
+main > figure {
+  align-content: center;
+  display: grid;
+}
+main img,
+main object {
+  justify-self: center;
+  max-width: 100%;
+  vertical-align: middle;
+}
+main figure {
+  text-align: center;
+}
+main figure img {
+  width: 100%;
+}
+main figure img:first-of-type:last-of-type,
+main figure object:first-of-type:last-of-type {
+  display: block;
+  margin: auto;
+}
+main figure figcaption {
+  display: block;
+  margin-top: 0.5rem;
+}
+article {
+  align-content: stretch;
+  align-items: center;
+  background: white;
+  display: grid;
+  grid-gap: 0.5rem;
+  grid-template-rows: min-content;
+  hyphens: auto;
+  line-height: 1.35;
+  padding: 0 0.5rem 0.5rem 0.5rem;
+  font-family: 'Palatino Linotype', 'Times New Roman', sans-serif;
+}
+article > header {
+  background: rgb(0, 255, 191);
+  color: black;
+  margin: 0 -0.5rem 0 -0.5rem;
+  padding: 0.25rem 0.5rem;
+  font-family: 'Arial', 'Times New Roman', sans-serif;
+}
+article > header > h3 {
+  font-weight: 500;
+}
+article p,
+article ul,
+article ol,
+article pre,
+article div,
+article figure,
+article hr {
+  margin: 0;
+}
+article pre {
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
+}
+article hr {
+  border-width: thin 0 0 0;
+}
+#hp  {
+  float: right;
+  width: 30%;
+  text-align: center;
+  font-style: italic;
+  font-size: 12px;
+  caption-side: bottom;
+  text-indent: 0;
+  margin: 0.25em;
+  padding: 0.25em;
+}
+.infoBox {
+
+}
+.infoBox .entry {
+   font-size:          12px;
+   text-align: justify;
+}
+
+.infoBox .entry:last-child {
+}
+
+.infoBox .entry .inner {
+}
+
+.infoBox .entry:nth-child(even) {
+}
+
+.infoBox .entry:last-child {
+}
+
+.infoBox .entry .title {
+    float:              left;
+    margin: 0.25rem;
+    padding:                    0.25rem;
+}
+
+.infoBox .entry .type {
+    font-size:                  12px;
+    padding:                    0.25rem;
+    float:                      right;
+    margin:                    0.25rem;
+    text-align: justify;
+    text-align: center;
+    text-indent: 0;
+    width: 30%;
+    transform:translate 0, -10rem;
+}
+.imgr {
+  float:right;
+  width: 30%;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+  margin: .25em;
+  padding: 0.25em;
+}
+#imageleftg15 {
+  float:left;
+  width:36%;
+  margin:.2rem 0rem .5rem 3.5rem;
+  padding:1rem;
+  vertical-align: top;
+}
+#imagerightg15 {
+  float:right;
+  width:25%;
+  margin: .2rem 3rem .5rem 0rem;
+  padding:1rem;
+  vertical-align: top;
+  text-align: justify;
+}
+#imageleftkes79 {
+  float:left;
+  width:37%;
+  margin:.2rem 0rem .5rem 3rem;
+  padding:1rem;
+  vertical-align: top;
+  
+}
+#imagerightkes79 {
+  float:right;
+  width:24%;
+  margin: .2rem 3.5rem .5rem 0rem;
+  padding:1rem;
+  vertical-align: top;
+  text-align: justify;
+}
+#imageleftcasa {
+  float:left;
+  width:40%;
+  margin:.2rem 0rem .5rem 3rem;
+  padding:1rem;
+  vertical-align: top;
+  
+}
+#imagerightcasa {
+  float:right;
+  width:24%;
+  margin: .2rem 3.5rem .5rem 0rem;
+  padding:1rem;
+  vertical-align: top;
+  text-align: justify;
+}
+#imageleftpupa {
+  float:left;
+  width:40%;
+  margin:.2rem 0rem .5rem 3rem;
+  padding:1rem;
+  vertical-align: top;
+  
+}
+#imagerightpupa {
+  float:right;
+  width:24%;
+  margin: .2rem 3.5rem .5rem 0rem;
+  padding:1rem;
+  vertical-align: top;
+  text-align: justify;
+}
+#imageleftg349 {
+  float:left;
+  width:40%;
+  margin:.2rem 0rem .5rem 3rem;
+  padding:1rem;
+  vertical-align: top;
+  
+}
+#imagerightg349 {
+  float:right;
+  width:24%;
+  margin: .2rem 3.5rem .5rem 0rem;
+  padding:1rem;
+  vertical-align: top;
+  text-align: justify;
+}
+#imageleftg350 {
+  float:left;
+  width:40%;
+  margin:.2rem 0rem .5rem 3rem;
+  padding:1rem;
+  vertical-align: top;
+  
+}
+#imagerightg350 {
+  float:right;
+  width:24%;
+  margin: .2rem 3.5rem .5rem 0rem;
+  padding:1rem;
+  vertical-align: top;
+  text-align: justify;
+}
+#imageleftrcw103 {
+  float:left;
+  width:40%;
+  margin:.2rem 0rem .5rem 3rem;
+  padding:1rem;
+  vertical-align: top;
+  
+}
+#imagerightrcw103 {
+  float:right;
+  width:24%;
+  margin: .2rem 3.5rem .5rem 0rem;
+  padding:1rem;
+  vertical-align: top;
+  text-align: justify;
+}
+img {
+    
+}
+.imgscale:hover {
+    -webkit-transform:matrix(1.5,0,0,1.5,0,0);
+    transform:matrix(1.5,0,0,1.5,0,-0);
+}
+.imgscalercw:hover {
+    -webkit-transform:matrix(3,0,0,3,0,50);
+    transform:matrix(3,0,0,3,0,50);
+}
+.imgplot:hover {
+    -webkit-transform:matrix(3.8,0,0,3.8,0,-100);
+    transform:matrix(3.8,0,0,3.8,0,-100);
+}
+.imgtrans:hover {
+    -webkit-transform:matrix(2,0,0,2,100,-100);
+    transform:matrix(2,0,0,2,100,-100);
+}
+.imgtable:hover {
+    -webkit-transform:matrix(2,0,0,2,-50,-50);
+    transform:matrix(2,0,0,2,-50,-50);
+}
+article ul,
+article ol {
+  padding: 0;
+}
+article ul > li,
+article ol > li {
+  list-style-type: none;
+  margin-left: 1.25em;
+  margin-bottom: 0.25rem;
+}
+article ul > li::before,
+article ol > li::before {
+  display: inline-block;
+  margin-left: -1em;
+}
+article ul > li:last-child,
+article ol > li:last-child {
+  margin-bottom: 0;
+}
+article ol {
+  counter-reset: item;
+}
+article ol > li::before {
+  content: counter(item) ". ";
+  counter-increment: item;
+  font-weight: 500;
+  width: 1em;
+}
+article ul > li::before {
+  background: #1e968a;
+  border-radius: 100%;
+  content: " ";
+  height: 0.35em;
+  vertical-align: middle;
+  width: 0.35em;
+  margin-right: 0.65em;
+}
+article ul.inline {
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+article ul.inline li {
+  display: inline;
+  margin: 0.25em 0.5em;
+  padding: 0;
+}
+article ul.inline li::before {
+  display: none;
+}
+.boxed {
+  border: thin solid #f57900;
+  padding: 0.25rem;
+}
+.center {
+  text-align: center;
+}
+.justify-center {
+  justify-self: center;
+}
+.align-center {
+  align-self: center;
+}
+.xxs {
+  font-size: xx-small;
+}
+.xs {
+  font-size: x-small;
+}
+.small {
+  font-size: small;
+}
+.medium {
+  font-size: medium;
+}
+.large {
+  font-size: large;
+}
+.xl {
+  font-size: x-large;
+}
+.xxl {
+  font-size: xx-large;
+}
+.xxxl {
+  font-size: xxx-large;
+}
+.columns,
+.columns-top,
+.columns-center,
+.columns-bottom {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 0.5rem;
+}
+.columns-top {
+  align-items: start;
+}
+.columns-center {
+  align-items: center;
+}
+.columns-bottom {
+  align-items: end;
+}
+br.qquad {
+  content: " ";
+  margin-right: 4em;
+}
+.separator:empty {
+  display: block;
+}
+.contents {
+  display: contents;
+}
+mjx-container,
+.MJXc-display,
+.MJXp-display,
+.MathJax_Display,
+.MathJax_Preview,
+.MathJax_SVG_Display,
+.MathJax_SVG_Preview,
+.MathJax_PHTML_Display,
+.MathJax_PHTML_Preview,
+.MathJax_MathML {
+  margin: 0 !important;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.MathJax_Preview:empty {
+  display: none;
+}
